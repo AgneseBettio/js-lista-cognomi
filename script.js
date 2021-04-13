@@ -20,6 +20,6 @@ for (var i = 0; i < sortedSurnameList.length; i++) {
     printedList.innerHTML += "<ol>" + sortedSurnameList[i] + "</ol>";
 }
 
-var userPosition = (SortedSurnameList.indexOf(userSurname)) - 1;
+var userPosition = sortedSurnameList.indexOf(userSurname) + 1;
 console.log(userPosition);
 document.getElementById("user-position").innerHTML = "la tua posizione nella lista d'attesa è " + userPosition;
